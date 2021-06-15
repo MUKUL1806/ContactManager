@@ -3,8 +3,7 @@ class AddContact extends React.Component
 {   state={
 	name:"",
 	email:"",
-      
-};
+          };
 add=(e)=>{
 	e.preventDefault();
 	if(this.state.name===""||this.state.email==="")
@@ -14,7 +13,7 @@ add=(e)=>{
 	}
 	this.props.addContactHandeler(this.state);
 	this.setState({name:"",email:""});
-      this.props.history.push("/");
+      this.props.history.push("/ContactManager/");
 	
 }
 	render(){

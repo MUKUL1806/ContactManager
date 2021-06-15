@@ -18,7 +18,7 @@ const ContactDeatils=(props)=>{
 		<div className="description">{email}</div>
 		</div>
 		<div className="center-div">
-		<Link to="/">
+		<Link to="/ContactManager/">
 		<button style={{float:"center"}}className="ui button blue center">
 		Back to Contact List</button>
 		</Link>

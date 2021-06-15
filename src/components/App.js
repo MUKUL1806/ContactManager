@@ -34,17 +34,17 @@ function App() {
         <Router>
         <Header/>
         <Switch>
-        <Route exact path="/"
+        <Route exact path="/ContactManager/"
         render={(props)=>(
         <ContactList {...props} 
         contacts={contacts} getContactId={removeContactHandeler}/>)}/>
-        <Route path='/add' 
+        <Route path='/ContactManager/add' 
         render={(props)=>(
         	<AddContact {...props}
             addContactHandeler={addContactHandeler}
         	/>
         	)}/>
-        <Route path="/contact/:id" component={ContactDetail}/>
+        <Route path="/ContactManager/contact/:id" component={ContactDetail}/>
         </Switch>
         </Router>
   </div>
